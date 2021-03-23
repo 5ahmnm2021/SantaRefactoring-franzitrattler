@@ -1,15 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     public static ObstacleSpawner instance;
-
     public GameObject[] obstacles;
-
     public bool gameOver = false;
-
     public float minSpawnTime, maxSpawnTime;
 
 
@@ -20,17 +16,9 @@ public class ObstacleSpawner : MonoBehaviour
             instance = this;
         }
     }
-
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("Spawn");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator Spawn()
