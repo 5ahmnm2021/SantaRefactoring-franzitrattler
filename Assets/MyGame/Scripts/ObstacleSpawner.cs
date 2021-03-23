@@ -16,6 +16,7 @@ public class ObstacleSpawner : MonoBehaviour
             instance = this;
         }
     }
+
     void Start()
     {
         StartCoroutine("Spawn");
